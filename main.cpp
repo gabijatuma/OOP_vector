@@ -17,8 +17,6 @@ using namespace std;
 
 int main()
 {
-
-    /*srand (time(NULL));
     char type = 'v';
 
     cout<<"Irasymas i naujus konteinerius | irasymas i nauja ir senu duomenu panaikinimas "<<endl;
@@ -32,7 +30,7 @@ int main()
         readfileM(type, kiekis);
 
 
-    }*/
+    }
 
 
 
@@ -72,26 +70,26 @@ int main()
     myvector <int>mv;
 
 
-    // Pradëti v1 uşpildymo laiko matavimà
+    // PradÃ«ti v1 uÃ¾pildymo laiko matavimÃ 
     //unsigned int sz = 10000;  // 100000, 1000000, 10000000, 100000000
    for(int sz = 10000; sz <=100000000; sz*=10){
     cout<<"     "<<sz<<"           "<<endl;
     auto start = high_resolution_clock::now();
     for (int i = 1; i <= sz; ++i)
     v.push_back(i);
-    // Baigti v1 uşpildymo laiko matavimà
+    // Baigti v1 uÃ¾pildymo laiko matavimÃ 
     auto stop = high_resolution_clock::now();
     auto duration = duration_cast<microseconds>(stop - start);
     cout<<"std::vector: "<<(double)duration.count()/1000000<<endl;
 
-    // Pradëti v2 uşpildymo laiko matavimà
+    // PradÃ«ti v2 uÃ¾pildymo laiko matavimÃ 
     auto start2 = high_resolution_clock::now();
     for (int i = 1; i <= sz; ++i)
     mv.push_back(i);
      auto stop2 = high_resolution_clock::now();
     auto duration2 = duration_cast<microseconds>(stop - start);
     cout<<"My vector: "<<(double)duration.count()/1000000<<endl;
-    // Baigti v2 uşpildymo laiko matavimà
+    // Baigti v2 uÃ¾pildymo laiko matavimÃ 
    }*/
     return 0;
 }
