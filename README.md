@@ -28,3 +28,4 @@ In this project i have tried to create a vector-like class that could be used in
 
 
 I wanted to check how optimised my_vector class is, so i did a time comparrison between my_vector class and std::vector container when they had to push back 10000, 100000, 1000000, 10000000 an 100000000 <int> elements. These are the results:
+ ![myvector_comparrison](https://user-images.githubusercontent.com/60934852/82640570-82250f80-9c13-11ea-9fac-43f0d792da21.jpg)
